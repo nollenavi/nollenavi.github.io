@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Darkomatic d.o.o.</title>
+		<link href="nolle.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<section id="wrapper">
+			<header>
+				<h1> <img src="slike/logo.png" alt="logo_ecoExport" id="logo" /> </h1>
+			</header>
+
+			<div id="main">
+				<header>
+					<nav id="main-menu">
+						<ul>
+							<li><a href="index.html">Početna</a></li>
+							<li><a href="oNama.html">O nama</a></li>
+							<li><a href="usluge.html">Usluge</a></li>
+							<li class="active"><a href="#">Kontakt</a></li>
+						</ul>
+					</nav>
+						<div class="cleaner">	</div>
+				</header>
+				
+				<div id="sredina">
+					<div id="sredina-opis">
+						<div id="osnovni-podaci"> 
+							<h1>Osnovi podaci</h1> </br>
+							<p><b>Naziv:</b> ECO-EXPORT D.O.O.</p>
+							<p><b>Telefon:</b> 011/222-258; 064/12-34-567</p>
+							<p><b>Email:</b> eco.export@gmail</p>
+							<p><b>Adresa:</b> Maršala Tita bb</p>
+							<p><b>Poštanski broj:</b> 11000 Beograd</p>
+						</div> </br>
+						
+					<div id="slika-kontakt"><img src="slike/zerowaste.png" alt="zerewaste_image" /></div>
+					
+						
+						<div id="forma">
+							<form name="upit" method="post" action="#">
+								<fieldset style="border-radius:10px;">
+								<legend>Kontaktirajte nas</legend> </br>
+								<label for="ime">Ime: </label>
+								<input type="text" id="tbIme" name="tbIme" placeholder="Unesite Vaše ime" /> </br>
+								<label for="email">Email: </label>
+								<input type="text" id="tbEmail" name="tbEmail" placeholder="Unesite Vaš Email" /> </br>
+								<label for="poruka">Poruka: </label> </br>
+								<textarea id="taPoruka" name="taPoruka" cols="60" rows="15" style="resize:vertical;"> </textarea> </br>
+								<input type="submit" id="btnUpit" name="btnUpit" value="Pošalji" /> </br> </br>
+								</fieldset>
+							</form>
+						</div>
+						
+					</div>
+					
+					<div class="cleaner">
+					</div>
+				
+				</div>
+
+				
+				
+			</div>
+			
+
+			<footer>
+				<p>designed & produced by Novakov Ivan | University of Singidunum | Faculty of Informatics and Computing</p>
+			</footer>
+			
+			
+		</section>
+		
+		<script type="text/javascript">
+			document.getElementById('btnUpit').addEventListener("click", target);
+					
+				function target () {
+					alert("Podaci su poslati. Potrudićemo se da Vam odgovorimo u najkraćem mogućem roku.");
+					document.removeEventListener("click", target);
+				}
+			</script>
+		
+	</body>
+</html>
